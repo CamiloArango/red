@@ -1,55 +1,59 @@
-Eyes Taped Flask App
-This Flask application allows users to upload photos and automatically cover the eyes with tape. It utilizes the MTCNN (Multi-Task Cascaded Convolutional Networks) model for face detection and image processing.
+# Eyes Taped
 
-Installation and Setup
-Clone the repository:
+This is a Flask web application that allows users to upload photos and apply virtual tape over the eyes in the uploaded images. The application uses the MTCNN (Multi-Task Cascaded Convolutional Neural Network) model for face detection.
 
-bash
-Copy code
-git clone https://github.com/yourusername/eyes-taped.git
-Navigate to the project directory:
+## Features
 
-bash
-Copy code
-cd eyes-taped
-Install the required dependencies:
+- Upload photos where eyes are clearly visible.
+- Select from different tape options to cover the eyes.
+- Process uploaded images to apply tape over the eyes.
+- Download the processed images.
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the Flask application:
+## How to Use
 
-bash
-Copy code
-python app.py
-Access the application via your web browser at http://localhost:5000/red.
+1. Clone the repository:
 
-Usage
-Upload photos where the eyes are clearly visible.
-Choose a tape color from the dropdown menu.
-Click or drag and drop the image to cover the eyes with tape.
-Process the image to see the result.
-Download the processed image if satisfied.
-File Structure
-app.py: Main Flask application file containing the backend logic.
-index.html: HTML template for the user interface.
-script.js: JavaScript file for client-side functionality.
-style.css: CSS file for styling the interface.
-static/: Directory containing static files such as images and CSS.
-error.log: Log file for error logging.
-Dependencies
-Flask: Web framework for Python.
-OpenCV: Library for computer vision and image processing.
-MTCNN: Multi-Task Cascaded Convolutional Networks for face detection.
-Bootstrap: Front-end CSS framework for responsive design.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+    ```bash
+    git clone https://github.com/your-username/eyes-taped.git
+    ```
 
-Author
-Camilo Arango
+2. Install dependencies:
 
-Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Support
-If you find any issues or have any questions, please open an issue.
+3. Run the Flask application:
+
+    ```bash
+    python app.py
+    ```
+
+4. Open your web browser and go to [http://localhost:5000/red](http://localhost:5000/red).
+
+5. Drag and drop your photo into the designated area or click to select a file.
+6. Choose the tape color from the dropdown menu.
+7. Click on the "Process Image" button.
+8. Once processed, you can download the image with the tape applied.
+
+## Dependencies
+
+- Flask
+- OpenCV
+- MTCNN
+- NumPy
+
+## File Structure
+
+- `app.py`: Flask application file containing server-side logic.
+- `index.html`: HTML template for the front-end interface.
+- `script.js`: JavaScript file handling client-side functionality.
+- `style.css`: CSS file for styling the web interface.
+
+## Credits
+
+- This project utilizes the MTCNN model for face detection.
+
+## License
+
+[MIT License](LICENSE)
