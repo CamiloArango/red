@@ -1,0 +1,3 @@
+flask
+mtcnn
+opencv-python
